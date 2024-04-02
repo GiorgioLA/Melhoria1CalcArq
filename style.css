@@ -1,0 +1,69 @@
+.maindiv {
+    width: 100%;
+    border: 5px;
+    display: flex;
+    justify-content: space-around;
+    height: max-content;
+
+}
+
+.subdiv1 {
+    width: 40%;
+    border: 2px solid;
+    border-color: #000000;
+    background-color: #d4e6d9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+body {
+    margin: 0;
+    border: 0;
+    background-color: black;
+    background-image: url(https://i.pinimg.com/originals/15/f9/44/15f94498544c7919deadeb78c5ff2260.jpg);
+}
+
+.boxes {
+    color: rgb(7, 7, 7);
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-content: center;
+}
+
+.title {
+    font-weight: 900;
+    font-style: italic;
+}
+
+.inputnum {
+    border: 2px solid;
+    border-radius: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    
+}
+
+.botao {
+    border: 2px solid;
+    border-radius: 10%;
+    font-weight: bold;
+}
+
+.espacoBotao {
+    display: flex;
+}
+
+.check {
+    border: 15px;
+    border-radius: 100%;
+}

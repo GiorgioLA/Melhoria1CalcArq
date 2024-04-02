@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///C:/Users/Marise%20Miranda/Downloads/Marises%20Machine.html -->
+<html lang="en">
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="style.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+
+<body bgcolor="#00ffff">
+
+        <div class="maindiv">
+                <div class="subdiv1">
+                <h1 class="title">Giorgio's Machine</h1>
+
+                <h3>Decimal</h3>
+                <input class="inputnum" id="demo1" type="text" placeholder="Digite o valor em decimal">
+
+                <br>
+                <h3>converter para:</h3>
+                <input class="check" onclick="aparecer_octal()" type="checkbox"><b>Octal</b>
+                <br>
+                <input class="check" onclick="aparecer_hexa()" type="checkbox"><b>Hexadecimal</b>
+                <br>
+                <input class="check" onclick="aparecer_bin()" type="checkbox"><b>Binário</b>
+                <br>
+                <div class="boxes" id="demo2"></div>
+                <br>
+                <div class="boxes"id="demo3"></div>
+                <br>
+                <div class="boxes"id="demo4"></div>
+                <br>
+                <div class="espacobotao">
+                <button class="botao" onclick="converter()">Converter</button>
+                <button class="botao" onclick="limpar()">Limpar</button>
+                </div>
+                <br>
+                <p id="countdown"></p>
+                </div>
+        </div>
+        <script>
+                function converter() {
+
+                        var decimal = Number(demo1.value);
+
+                        let octal = decimal.toString(8);
+
+                        let hexadecimal = decimal.toString(16).toUpperCase();
+
+                        let binaria = decimal.toString(2);
+
+                        console.log(decimal);
+                        console.log(octal);
+                        console.log(hexadecimal);
+                        console.log(binaria);
+
+                        document.getElementById("demo1").innerHTML = ` ${decimal}`;
+                        document.getElementById("demo2").innerHTML = ` Em octal: ${octal}`;
+                        document.getElementById("demo3").innerHTML = ` Em decimal: ${hexadecimal}`;
+                        document.getElementById("demo4").innerHTML = ` Em Binário: ${binaria}`;
+
+
+                }
+
+                function aparecer_bin() {
+                        demo4.style.display = 'block'
+                }
+
+                function aparecer_hexa() {
+                        demo3.style.display = 'block'
+                }
+
+                function aparecer_octal() {
+                        demo2.style.display = 'block'
+                }
+                document.bgColor = "#00ffff";
+
+                function limpar() {
+                        document.getElementById("demo1").innerHTML = ``;
+                        document.getElementById("demo2").innerHTML = ``;
+                        document.getElementById("demo3").innerHTML = ``;
+                        document.getElementById("demo4").innerHTML = ``;
+                }
+        </script>
+</body>
+
+</html>
